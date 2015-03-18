@@ -2,23 +2,11 @@
 
 \subsection{System Domænemodel}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.82\textwidth]{Systemarkitektur/System/AVS_domain_model.png}
-	\label{fig:System BDD}
-	\caption{Domain model af AVS}
-\end{figure}
-
-
+\systemDomainModel{0.82}{System}{AVS}
 
 \subsection{System BDD}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.82\textwidth]{Systemarkitektur/System/AVS_SystemdiagramBDD.png}
-	\label{fig:System BDD}
-	\caption{Block Definition Diagram af AVS}
-\end{figure}
+\systemBDD{0.82}{System}{AVS}
 
 \subsubsection{CentralControl}
 CentralControl er systemets centrale computer. Det er gennem dette delsystem, at brugerens interaktion bliver behandlet og formidlet videre til andre delsystemer. CentralControl driver en webserver med dertilhørende web-applikation (GUI), som tillader brugeren at interagere med systemet gennem sin web-browser. Webserveren kommunikerer med et stykke centralt software, FlexPMS.
@@ -37,14 +25,14 @@ KarControl er en styring, som formidler og håndterer al datakommunikation og ko
 
 \subsubsection{Sensor Ø}
 Sensor Ø’er giver mulighed for at måle (f.eks. jordfugtighed) over et større areal ved, at Sensor Ø’erne spredes over området, hvor planterne gror, og har hver især tilsluttet sensorer. Dermed kan man måle jordfugtighed lokalt for området omkring Sensor Ø’en og styre vandtilførslen specifikt for planterne, som står i området.
-\subsection{Allokeringsdiagram}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.82\textwidth]{Systemarkitektur/System/AVS_Allokeringsdiagram.png}
-	\label{fig:System BDD}
-	\caption{Allokeringsdiagram af AVS}
-\end{figure}
+\subsubsection{RSConverter}
+RSConverter konverterer fra RS485 til RS232 når der modtages data, og fra RS232 til RS485 når der afsendes data.
+
+
+\subsection{System Allokeringsdiagram}
+
+\systemAllokeringsDiagram{0.82}{System}{AVS}
 
 
 

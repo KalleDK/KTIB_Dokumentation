@@ -1,5 +1,41 @@
 %!TEX root = ../main.tex
 
+\newcommand{\systemBDD}[3]{
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=#1\textwidth]{Systemarkitektur/#2/#2_BDD.png}
+	\label{fig:#2_BDD}
+	\caption{Block Definition Diagram af #3}
+\end{figure}
+}
+
+\newcommand{\systemIBD}[3]{
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=#1\textwidth]{Systemarkitektur/#2/#2_IBD.png}
+	\label{fig:#2_IBD}
+	\caption{Internal Block Diagram af #3}
+\end{figure}
+}
+
+\newcommand{\systemDomainModel}[3]{
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=#1\textwidth]{Systemarkitektur/#2/#2_Domain_Model.png}
+	\label{fig:#2_Domain_Model}
+	\caption{Domænemodel af #3}
+\end{figure}
+}
+
+\newcommand{\systemAllokeringsDiagram}[3]{
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=#1\textwidth]{Systemarkitektur/#2/#2_AllokeringsDiagram.png}
+	\label{fig:#2_Allokeringsdiagram}
+	\caption{Allokeringsdiagram af #3}
+\end{figure}
+}
+
 \chapter{Systemarkitektur}
 
 \begin{table}[H]
@@ -35,15 +71,21 @@ Alle	& 0.1	 	& 17-03-2015  \\
 
 \newpage
 
-\section{Kar Control diagrammer}
+\section{CentralControl diagrammer}
+
+\input{Systemarkitektur/CentralControl/CentralControl}
+
+\newpage
+
+\section{KarControl diagrammer}
 
 \input{Systemarkitektur/KarControl/KarControl}
 
 \newpage
 
-\section{SensorØ diagrammer}
+\section{Sensor Ø diagrammer}
 
-\input{Systemarkitektur/Sensoroe/Sensoroe}
+\input{Systemarkitektur/Sensor_oe/Sensor_oe}
 
 \newpage
 
@@ -53,21 +95,21 @@ Alle	& 0.1	 	& 17-03-2015  \\
 
 \newpage
 
-\section{jordfugtigheds-sensor diagrammer}
+\section{Jordfugt sensor diagrammer}
 
-\input{Systemarkitektur/Sensor_jordfugtighed/Sensor_jordfugtighed}
-
-\newpage
-
-\section{Ventil diagrammer}
-
-\input{Systemarkitektur/Ventiler/Ventiler}
+\input{Systemarkitektur/Sensor_Jordfugt/Sensor_Jordfugt}
 
 \newpage
 
-\section{Vandpumpe diagrammer}
+\section{Ventilstyring diagrammer}
 
-\input{Systemarkitektur/Vandpumpe/Vandpumpe}
+\input{Systemarkitektur/Ventilstyring/Ventilstyring}
+
+\newpage
+
+\section{Vandpumpestyring diagrammer}
+
+\input{Systemarkitektur/Vandpumpestyring/Vandpumpestyring}
 
 \newpage
 %\section{RS485 Converter diagrammer}
